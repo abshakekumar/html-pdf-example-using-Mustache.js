@@ -40,7 +40,7 @@ var template = `
             </section>
         </header>
         
-        <section>
+        <section class='{{styles.page.section_class}}'>
             <table class='{{styles.table.table_class}} shipping-table table'>
                 <tbody class='{{styles.table.data_class}} table-data'>
                     <tr valign='top'>
@@ -56,7 +56,7 @@ var template = `
             <span>PREPAID GROUND</span>
             <span>PACKING SLIP ONLY</span>
         </div>
-<section class="ship-to data-columns">
+<section class="{{styles.page.section_class}} ship-to data-columns">
     <section>
     <table class='{{styles.table.table_class}}'>
         <tbody class='{{styles.table.data_class}}'>
@@ -108,7 +108,7 @@ var template = `
 
 </section>
         
-        <section style="padding-top: 15px; padding-bottom: 10px">
+        <section class='{{styles.page.section_class}}' style="padding-top: 15px; padding-bottom: 10px">
             <table  class='{{styles.table.table_class}} table'>
                 <thead class='{{styles.table.header_class}} table-header'>
                     <tr>
