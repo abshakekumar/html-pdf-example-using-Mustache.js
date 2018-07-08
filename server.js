@@ -87,7 +87,9 @@ var server = http.createServer(function(request, res) {
         htmlPdf.create(htmlContent, options).toStream(function(err, stream) {
             var filename = 'testfilehtml-inline';
             filename = encodeURIComponent(filename) + '.pdf'
+                // this will download the pdf when it is requested from browser
                 // res.setHeader('Content-disposition', 'attachment; filename="' + filename + '"')
+                // this will open the pdf when it is requested from browser
             res.setHeader('Content-disposition', 'inline; filename="' + filename + '"')
             res.setHeader('Content-type', 'application/pdf')
             stream.pipe(res);
@@ -97,4 +99,4 @@ var server = http.createServer(function(request, res) {
 });
 server.listen(3232);
 
-console.log(' %c SERVER Stared at port:3232, running ......', 'font-weight:bold;');
+console.log('SERVER Stared at port:3232, running ......');
