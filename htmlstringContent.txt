@@ -30,7 +30,6 @@
             <section >
             <div>hello : sample1_l.jpg</div>
             <img src='sample1_l.jpg'/>
-            <img src='file:///home/developer/Desktop/node_test/initial_modules/templates/sample1_l.jpg'/>
                 <div class="header-title">ALLTIMER</div>
                 <div class="header-address">
                     <div>sadasdasdasdsadsa</div>
@@ -74,11 +73,11 @@
             </tr>
             <tr>
                 <td>Start Date :</td>
-                <td>Sat Sep 08 2018 19:25:27 GMT+0530 (IST)</td>
+                <td>Sat Sep 08 2018 21:39:32 GMT+0530 (IST)</td>
             </tr>
             <tr>
                 <td>Expiry Date :</td>
-                <td>Sat Sep 08 2018 19:25:27 GMT+0530 (IST)</td>
+                <td>Sat Sep 08 2018 21:39:32 GMT+0530 (IST)</td>
             </tr>
         </tbody>
     </table>

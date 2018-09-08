@@ -62,7 +62,6 @@ var server = http.createServer(function(request, res) {
                 "left": "0.5in"
             },
             base: `file://${basePath}/`
-                // base: 'file:///home/developer/Desktop/node_test/initial_modules/templates/'
         };
         packingSlipTemplate.templateData.data.imgsrc = imageSrc;
         console.log('Template Type :', templatetype);
@@ -70,15 +69,6 @@ var server = http.createServer(function(request, res) {
         switch (templatetype) {
             case 'sales':
                 htmlContent = MushtacheModule.render(salesInvoiceTemplate.templateStructure, salesInvoiceTemplate.templateData);
-                break;
-            case 'receiving':
-                htmlContent = MushtacheModule.render(receivingReceiptTemplate.templateStructure, receivingReceiptTemplate.templateData);
-                break;
-            case 'packing':
-                htmlContent = MushtacheModule.render(packingSlipTemplate.templateStructure, packingSlipTemplate.templateData);
-                break;
-            case 'commercial':
-                htmlContent = MushtacheModule.render(commercialSlipTemplate.templateStructure, commercialSlipTemplate.templateData);
                 break;
 
         }
@@ -99,3 +89,12 @@ var server = http.createServer(function(request, res) {
 server.listen(3232);
 
 console.log('SERVER Stared at port:3232, running ......');
+//            case 'receiving':
+// htmlContent = MushtacheModule.render(receivingReceiptTemplate.templateStructure, receivingReceiptTemplate.templateData);
+// break;
+// case 'packing':
+// htmlContent = MushtacheModule.render(packingSlipTemplate.templateStructure, packingSlipTemplate.templateData);
+// break;
+// case 'commercial':
+// htmlContent = MushtacheModule.render(commercialSlipTemplate.templateStructure, commercialSlipTemplate.templateData);
+// break;

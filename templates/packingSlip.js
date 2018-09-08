@@ -30,7 +30,6 @@ var template = `
             <section >
             <div>hello : {{data.imgsrc}}</div>
             <img src='{{data.imgsrc}}'/>
-            <img src='file:///home/developer/Desktop/node_test/initial_modules/templates/sample1_l.jpg'/>
                 <div class="header-title">{{data.organisation_name}}</div>
                 <div class="header-address">
                     <div>{{data.address.street}}</div>
