@@ -2,31 +2,24 @@
    
 <style>
     .main-container{font-size: 8px; max-width: 700px; margin: 0 auto;}
-    .table { width: 100%; text-align: left; border-collapse: collapse; border: 1px solid gray;}
+    .table { width: 100%; text-align: left;}
     .table-header { font-size: 8px;}
     .table-data { font-size: 7px;}
-    .header { width: 70%; font-size: 12px; font-weight: bold; margin: 0 auto; text-align: center;}
+    .header { width: 30%; font-size: 8px; font-weight: bold;}
     .header-address { font-size: 8px; font-weight: normal;}
-    .table.shipping-table { vertical-align: unset; padding: 10px 5px;}
+    .table.shipping-table { width: 50%; vertical-align: unset; padding: 10px 0;}
     .table.shipping-table td { vertical-align: unset; font-size:8px;}
     .data-columns {padding:15px 0 0 0; display:inline-block; width: 100%; position: relative;}
     .data-columns > section:first-child {width:40%; display:inline-block; font-weight:bold;}
     .data-columns > section:last-child {width:55%; display: inline-block; font-weight:bold; float: right;}
     .data-columns td { padding: 0;}
-    .data-columns table { width: 100%; font-size:8px; font-weight: bold; 
-        margin:15px 5px; outline: 1px solid gray;
-        border-collapse: initial;}
+    .data-columns table { width: 100%; font-size:8px; font-weight: bold;}
     .data-columns td:first-child { width: 40%;}
     .data-columns td:last-child { font-weight: normal;}
+    .data-columns > section:last-child tr:last-child { position: absolute; bottom: 3px;}
     .ship-to.data-columns section:last-child > div:last-child { position: absolute; bottom: 0;}
     .ship-header > span {padding-right: 20px; font-weight: bold; font-size: 10px;}
-    img { width: 200px; height:100px;}
-    .header .image { height: 100px; width: 100px; margin:0 auto; padding-bottom: 10px;}
-    .declaration-section { padding-top: 25px;}
-    .declaration-section .text-field { margin-left: 10px; font-size: 6px; display: inline-block; border-bottom: 1px solid; padding-bottom : 1px;}
-    .declaration-section .text-field:first-child { width: 40%;  padding-top: 20px;}
-    .declaration-section .text-field:last-child { width: 30%;}
-    .outline-tr { border-top: 1px solid gray;}
+    img { width: 200px; height:100px; border: 2px solid red;}
     
     .main-container{ color: ; font-size: 8px;}
 
@@ -34,141 +27,156 @@
 
     <section class="container-provided main-container">
         <header class="header">
-            <img class='image-class image' src='sample1_l.jpg'/>
-                <div class="header-title">COMMERCIAL INVOICE</div>
-                    <div>Invoice #  10597_B001</div>
+            <section >
+            <div>hello : sample1_l.jpg</div>
+            <img src='sample1_l.jpg'/>
+            <img src='file:///home/developer/Desktop/node_test/initial_modules/templates/sample1_l.jpg'/>
+                <div class="header-title">ALLTIMER</div>
+                <div class="header-address">
+                    <div>sadasdasdasdsadsa</div>
+                    <div>324234 234234 xgashdgasd asdhasdasdasd</div>
+                    <div>Caanda- 45455</div>
+                </div>
+            </section>
         </header>
         
-        <section class="data-columns">
-                <section class="left-section">
-                        <table class='table-provided shipping-table table'>
-                                <tbody class='table-data-provided table-data'>
-                                    
-                                            <tr><td style="width: 20%; vertical-align: unset; font-weight: bold; font-size: 8px;">EXPORTER : </td></tr>
-                                            <tr><td>expodfdfdf  ,<div>sadasdasd asd as das d dasd asd as das  dasd asd as das  dasd asd as das  dasd asd as das  as dasdd</div></td></tr>
-                                    
-                                </tbody>
-                            </table>
-                </section>
-                <section class="right-section">
-
-                        <table class='table-provided shipping-table table'>
-                                <tbody class='table-data-provided table-data'>
-                                    
-                                            <tr><td style="width: 20%; vertical-align: unset; font-weight: bold; font-size: 8px;">IMPORTER / SOLD TO : </td></tr>
-                                            <tr><td>impo sdfgdfgfg ,<div>sadasdasd asd as dasfsdfd dsdfgfg </div></td></tr>
-                                    
-                                </tbody>
-                            </table>
-
-                        <table class='table-provided shipping-table table'>
-                                <tbody class='table-data-provided table-data'>
-                                    
-                                            <tr><td style="width: 20%; vertical-align: unset; font-weight: bold; font-size: 8px;">SHIP TO : </td></tr>
-                                            <tr><td>ship  sfdfdf ,<div>sadasdasd asd as das d dasd asd as das  dasd asd as das  dasd asd as das  dasd asd as das  as dasdd</div></td></tr>
-                                    
-                                </tbody>
-                            </table>
-                </section>
-                
-            </section>
-
-        <section style="padding-top: 15px; padding-bottom: 10px">
-            <table  class='table-provided table'>
-                <thead class='table-header-provided table-header'>
-                    <tr>
-                        <th style="width:10%">PO #</th>
-                        <th style="width:15%">SKU</th>
-                        <th style="width:5%">UPC</th>
-                        <th style="width:5%">ASIN</th>
-                        <th style="width:15%">TITLE</th>
-                        <th style="width:5%">QTY</th>
-                        <th style="width:5%">COO</th>
-                        <th style="width:5%"> Knit/ Woven</th>
-                        <th style="width:10%">Fabrication</th>
-                        <th style="width:5%">HTS #</th>
-                        <th style="width:5%">MFR ID</th>
-                        <th style="width:5%">Cost</th>
-                        <th style="width:10%">Line Total</th>
-                    </tr>
-                </thead>
+        <section class='section-provided'>
+            <table class='table-provided shipping-table table'>
                 <tbody class='table-data-provided table-data'>
-                <tr>
-                        <td>r</td>
-                        <td>124</td>
-                        <td>21323</td>
-                        <td>232321312vfdg fgfg dfdfgf dfgdfgfgfdgfdgfdg3213213</td>
-                        <td>213</td>
-                        <td>213</td>
-                        <td>123</td>
-                        <td>213</td>
-                        <td>213</td>
-                        <td>213</td>
-                        <td>213</td>
-                        <td>213</td>
-                        <td>213 $</td>
-                    </tr>
-                <tr>
-                        <td>sds</td>
-                        <td>124</td>
-                        <td>21323</td>
-                        <td>2323213123213213</td>
-                        <td>213</td>
-                        <td>213</td>
-                        <td>123</td>
-                        <td>213</td>
-                        <td>213</td>
-                        <td>213</td>
-                        <td>213</td>
-                        <td>213</td>
-                        <td>213 $</td>
-                    </tr>
-                <tr>
-                        <td>dfdf</td>
-                        <td>124</td>
-                        <td>21323</td>
-                        <td>2323213123213213</td>
-                        <td>213</td>
-                        <td>213</td>
-                        <td>123</td>
-                        <td>213</td>
-                        <td>213</td>
-                        <td>213</td>
-                        <td>213</td>
-                        <td>213</td>
-                        <td>213 $</td>
-                    </tr>
-                    <tr> <td colspan='13' style='padding-bottom:10px;'></td></tr>
-                    <tr class='outline-tr' style="font-weight: bold; font-size:8px;">
-                    <td colspan='6'>Sub Total</td>
-                    <td colspan='6'></td>
-                    <td colspan='1'>454545 $</td>
-                    </tr>
-                    <tr class='outline-tr' style="font-weight: bold; font-size:8px;">
-                    <td colspan='6'>Discounts</td>
-                    <td colspan='6'></td>
-                    <td colspan='1'>454545 $</td>
-                    </tr>
-                    <tr class='outline-tr' style="font-weight: bold; font-size:8px;">
-                    <td colspan='6'>Freight Charge</td>
-                    <td colspan='6'></td>
-                    <td colspan='1'>454545 $</td>
-                    </tr>
-                    <tr class='outline-tr' style="font-weight: bold; font-size:8px;">
-                    <td colspan='5'>Total</td>
-                    <td colspan='3'>454545</td>
-                    <td colspan='4'></td>
-                    <td colspan='1'>454545 $</td>
-                    </tr>
+                    <tr valign='top'>
+                            <td style="width: 20%; vertical-align: unset; font-weight: bold; font-size: 8px;">Ship To : </td>
+                            <td>sdasdasdsa , <div>sadasdasd asd as das d dasd asd as das  dasd asd as das  dasd asd as das  dasd asd as das  as dasdd</div></td>
+                        </tr>
                 </tbody>
             </table>
         </section>
 
-        <section class=" declaration-section">
-            <div>I hereby certify this commercial invoice to be true and correct.</div>
-            <div>
-                <div class='text-field'>Shipper/Title</div>
-                <div class='text-field'>Date</div>
-            </div>
-        </section>
+        <div class="ship-header">
+            <span>SHIP :</span>
+            <span>PREPAID GROUND</span>
+            <span>PACKING SLIP ONLY</span>
+        </div>
+<section class="section-provided ship-to data-columns">
+    <section>
+    <table class='table-provided'>
+        <tbody class='table-data-provided'>
+            <tr>
+                <td>Order ID:</td>
+                <td>dasdasdasd asdasdasdasdsa</td>
+            </tr>
+            <tr>
+                <td> PO # :</td>
+                <td>dasdasdasd asdasdasdasdsa</td>
+            </tr>
+            <tr>
+                <td>Order Terms :</td>
+                <td>dasdasdasd asdasdasdasdsa</td>
+            </tr>
+            <tr>
+                <td>Start Date :</td>
+                <td>Sat Sep 08 2018 19:25:27 GMT+0530 (IST)</td>
+            </tr>
+            <tr>
+                <td>Expiry Date :</td>
+                <td>Sat Sep 08 2018 19:25:27 GMT+0530 (IST)</td>
+            </tr>
+        </tbody>
+    </table>
+    </section>
+    <section>
+            <table class='table-provided'>
+                    <tbody class='table-data-provided'>
+                        <tr>
+                            <td>Total Ordered :</td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td> Total Unavailable :</td>
+                            <td>dasdasdasd asdasdasdasdsa</td>
+                        </tr>
+                        <tr>
+                            <td>Total Shipped :</td>
+                            <td>dasdasdasd asdasdasdasdsa</td>
+                        </tr>
+                        <tr>
+                            <td style="min-width:100px;">Order Notes :</td>
+                            <td>dasdasdasd asdasdasdasdsa</td>
+                        </tr>
+                    </tbody>
+                </table>
+    </section>
+
+</section>
+        
+        <section class='section-provided' style="padding-top: 15px; padding-bottom: 10px">
+            <table  class='table-provided table'>
+                <thead class='table-header-provided table-header'>
+                    <tr>
+                        <th style="width:15%">SKU</th>
+                        <th style="width:15%">UPC Code</th>
+                        <th style="width:20%">Description</th>
+                        <th style="width:5%">ORD</th>
+                        <th style="width:5%">UA</th>
+                        <th style="width:5%">SHP</th>
+                        <th style="width:10%">Weight per item (wt1)</th>
+                        <th style="width:10%"> ExtendedWeight (wt1)</th>
+                        <th style="width:10%"></th>
+                        <th style="width:5%">Type</th>
+                        <th style="width:5%">Shipment Carton #</th>
+                    </tr>
+                </thead>
+                <tbody class='table-data-provided table-data'>
+                <tr>
+                        <td>124</td>
+                        <td>21323</td>
+                        <td>2323213123213213</td>
+                        <td>213</td>
+                        <td>213</td>
+                        <td>123</td>
+                        <td>213</td>
+                        <td>213</td>
+                        <td></td>
+                        <td>213</td>
+                        <td>213</td>
+                    </tr>
+                <tr>
+                        <td>124</td>
+                        <td>21323</td>
+                        <td>2323213123213213</td>
+                        <td>213</td>
+                        <td>213</td>
+                        <td>123</td>
+                        <td>213</td>
+                        <td>213</td>
+                        <td></td>
+                        <td>213</td>
+                        <td>213</td>
+                    </tr>
+                <tr>
+                        <td>124</td>
+                        <td>21323</td>
+                        <td>2323213123213213</td>
+                        <td>213</td>
+                        <td>213</td>
+                        <td>123</td>
+                        <td>213</td>
+                        <td>213</td>
+                        <td></td>
+                        <td>213</td>
+                        <td>213</td>
+                    </tr>
+
+                        <tr>
+                            <td style="color: white">.</td>
+                        </tr>
+                    <tr style="font-size:8px;">
+                        <td colspan='6'></td>
+                            <td colspan="4" style="font-weight: bold; font-size:9px; text-align: right;">Total Cartons : </td>
+                        <td>45</td></tr>
+                            <tr style="font-size:8px;">
+                                    <td colspan='6'></td>
+                                        <td colspan="4" style="font-weight: bold; font-size:9px; text-align: right;">Total Weight(wt1) : </td>
+                                    <td>345</td></tr>
+                </tbody>
+            </table>
         </section>

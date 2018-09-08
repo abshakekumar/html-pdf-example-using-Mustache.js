@@ -1,7 +1,6 @@
 var http = require('http');
 var fs = require('fs');
 var path = require('path');
-var PDFDocument = require('pdfkit');
 var htmlPdf = require('html-pdf');
 var MushtacheModule = require('mustache');
 var salesInvoiceTemplate = require('./templates/salesInvoice.js');
